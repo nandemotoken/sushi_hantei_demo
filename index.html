@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>会員権保有判定</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="font-family: 'Arbutus Slab', serif;background: url(&quot;assets/img/おすし.png&quot;);background-size: cover;">
+    <div class="row">
+        <div class="col">
+            <h1 id="banner" style="text-align: center;border: 3px none var(--light);font-size: 6vw;">寿司会員権の保有判定(デモ)</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>
+                <p style="margin-bottom: 0px;text-align: center;font-size: 2vw;">こちらのページでは、会員権NFTを保有しているとポップアップが表示されます</p>
+                <div class="text-right" style="margin-top: 20px;"><a href="https://twitter.com/NandemoToken" target="_blank" style="margin-right: 30px;">Designed by @NandemoToken</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="wallet-popup">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ウォレットを選択</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center;"><a href="javascript:loadmm_gasfree()">
+                            <p style="font-size: 24px;">MetaMask&nbsp;&nbsp;<img src="assets/img/metamask.png" width="30px"></p>
+                        </a></div>
+                </div>
+                <div class="modal-footer">
+                    <p>ウォレットを選択してください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/NFTabi.js"></script>
+    <script src="assets/js/NFTStamps.js"></script>
+    <script src="assets/js/onload.js"></script>
+</body>
+
+</html>
